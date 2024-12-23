@@ -1,6 +1,6 @@
-import {createSlice} from '@reduxjs/toolkit';
-import {loginAction} from '@/store/actions/auth/login/loginActions';
-import {PayloadAction} from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
+import { loginAction } from '@/store/actions/auth/login/loginActions';
+import { PayloadAction } from '@reduxjs/toolkit';
 
 const initialState = {
   user: null,
@@ -62,7 +62,7 @@ export const loginReducer = createSlice({
         state.isLoginErr = true;
 
         if (action.payload) {
-          state.loginErrMsg = (action.payload as {message: string})?.message || 'Login failed';
+          state.loginErrMsg = (action.payload as { message: string })?.message || 'Login failed';
         } else {
           state.loginErrMsg = action.error.message || 'Login failed';
         }

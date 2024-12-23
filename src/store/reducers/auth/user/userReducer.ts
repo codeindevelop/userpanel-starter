@@ -1,5 +1,5 @@
-import {createSlice} from '@reduxjs/toolkit';
-import {loadProfileAction} from '@/store/actions/auth/login/loginActions';
+import { createSlice } from '@reduxjs/toolkit';
+import { loadProfileAction } from '@/store/actions/auth/login/loginActions';
 
 const initialState = {
   user: [],
@@ -34,7 +34,7 @@ export const userReducer = createSlice({
 
         if (action.payload) {
           state.loginErrMsg =
-            (action.payload as {message: string})?.message || 'Profile Load failed';
+            (action.payload as { message: string })?.message || 'Profile Load failed';
         } else {
           state.loginErrMsg = action.error.message || 'Profile Load failed';
         }

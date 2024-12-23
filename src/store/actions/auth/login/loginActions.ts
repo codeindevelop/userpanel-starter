@@ -1,9 +1,9 @@
 import axios from 'axios';
-import {AxiosError} from 'axios';
-import {createAsyncThunk} from '@reduxjs/toolkit';
+import { AxiosError } from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 import crud from '@/store/cruds/auth';
 
-export const loginAction = createAsyncThunk('login', async (data, {rejectWithValue}) => {
+export const loginAction = createAsyncThunk('login', async (data, { rejectWithValue }) => {
   try {
     const response = await axios.post(crud.loginUrl, data);
     const resData = response.data;
@@ -33,7 +33,7 @@ const config = {
   },
 };
 
-export const loadProfileAction = createAsyncThunk('user', async (_, {rejectWithValue}) => {
+export const loadProfileAction = createAsyncThunk('user', async (_, { rejectWithValue }) => {
   try {
     const response = await axios.get(crud.profileUrl, config);
     const resData = response.data;

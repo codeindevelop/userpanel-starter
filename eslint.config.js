@@ -8,7 +8,7 @@ import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default tseslint.config(
   prettierRecommended,
-  {ignores: ['dist', 'node_modules', '.eslint.config.js']},
+  { ignores: ['dist', 'node_modules', '.eslint.config.js'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -22,7 +22,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': ['warn', {allowConstantExport: true}],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
   }
 );
