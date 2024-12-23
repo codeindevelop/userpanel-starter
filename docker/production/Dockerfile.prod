@@ -1,0 +1,20 @@
+FROM node:18-alpine AS base
+
+ENV HOME /userpanel
+WORKDIR $HOME
+
+
+
+ 
+
+# Install dependencies based on the preferred package manager
+
+COPY ["./../../package.json", "./../../yarn.lock", "./../../.yarnrc", "$HOME/"]
+
+
+# RUN npm run build 
+RUN npm install
+
+COPY ./../../ $HOME
+
+CMD ["npm","run", "preview"]
