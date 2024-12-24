@@ -1,8 +1,0 @@
-*
-
-!yarn-offline-mirror/
-!src/
-!.env
-!package.json
-!yarn.lock
-!.yarnrc
