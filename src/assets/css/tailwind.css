@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		/* Colors Variable */
+		--color-primary: rgba(0, 120, 255, 100%);
+		--color-primary-active: rgba(5, 110, 233, 100%);
+		--color-primary-light: rgba(239, 246, 255, 100%);
+		--color-primary-invers: rgba(27, 132, 255, 20%);
+
+		--color-success: rgba(23, 198, 83, 100%);
+		--color-success-active: rgba(4, 180, 64, 100%);
+		--color-success-light: rgba(234, 255, 241, 100%);
+		--color-success-invers: rgba(23, 198, 83, 20%);
+
+		--color-info: rgba(114, 57, 234, 100%);
+		--color-info-active: rgba(80, 20, 208, 100%);
+		--color-info-light: rgba(248, 245, 255, 100%);
+		--color-info-invers: rgba(114, 57, 234, 20%);
+
+		--color-warning: rgba(246, 177, 0, 100%);
+		--color-warning-active: rgba(223, 160, 0, 100%);
+		--color-warning-light: rgba(255, 248, 221, 100%);
+		--color-warning-invers: rgba(246, 177, 0, 20%);
+
+		--color-danger: rgba(248, 40, 90, 100%);
+		--color-danger-active: rgba(216, 26, 72, 100%);
+		--color-danger-light: rgba(255, 238, 243, 100%);
+		--color-danger-invers: rgba(248, 40, 90, 20%);
+
+		--color-brand: rgba(0, 255, 224, 100%);
+		--color-brand-active: rgba(0, 179, 157, 100%);
+		--color-brand-light: rgba(230, 255, 252, 100%);
+		--color-brand-invers: rgba(150, 255, 242, 100%);
+		--color-brand-click: rgba(107, 255, 237, 100%);
+		--color-brand-hover: rgba(43, 255, 229, 100%);
+
+		--color-coal-50: rgba(24, 25, 31, 50.2%);
+		--color-coal-100: rgba(21, 23, 28, 100%);
+		--color-coal-200: rgba(19, 20, 26, 100%);
+		--color-coal-300: rgba(17, 18, 23, 100%);
+		--color-coal-400: rgba(15, 16, 20, 100%);
+		--color-coal-500: rgba(13, 14, 18, 100%);
+		--color-coal-600: rgba(11, 12, 16, 100%);
+
+		--color-black: rgba(0, 0, 0, 100%);
+
+		/* Radius */
+		--radius: 16px;
+	}
+
+	:root[class~='dark'] {
+		--color-primary: rgba(0, 106, 230, 100%);
+		--color-primary-active: rgba(16, 126, 255, 100%);
+		--color-primary-light: rgba(23, 35, 49, 100%);
+		--color-primary-invers: rgba(0, 106, 230, 20%);
+
+		--color-success: rgba(0, 162, 97, 100%);
+		--color-success-active: rgba(1, 191, 115, 100%);
+		--color-success-light: rgba(31, 38, 35, 100%);
+		--color-success-invers: rgba(0, 162, 97, 20%);
+
+		--color-info: rgba(136, 63, 255, 100%);
+		--color-info-active: rgba(158, 99, 255, 100%);
+		--color-info-light: rgba(39, 33, 52, 100%);
+		--color-info-invers: rgba(136, 63, 255, 20%);
+
+		--color-warning: rgba(197, 154, 0, 100%);
+		--color-warning-active: rgba(217, 170, 0, 100%);
+		--color-warning-light: rgba(36, 35, 32, 100%);
+		--color-warning-invers: rgba(197, 154, 0, 20%);
+
+		--color-danger: rgba(228, 40, 85, 100%);
+		--color-danger-active: rgba(255, 55, 103, 100%);
+		--color-danger-light: rgba(48, 32, 36, 100%);
+		--color-danger-invers: rgba(228, 40, 85, 20%);
+
+		--color-brand: rgba(0, 255, 224, 100%);
+		--color-brand-active: rgba(0, 179, 157, 100%);
+		--color-brand-light: rgba(230, 255, 252, 100%);
+		--color-brand-invers: rgba(150, 255, 242, 100%);
+		--color-brand-click: rgba(107, 255, 237, 100%);
+		--color-brand-hover: rgba(43, 255, 229, 100%);
+
+		--color-coal-50: rgba(24, 25, 31, 50.2%);
+		--color-coal-100: rgba(21, 23, 28, 100%);
+		--color-coal-200: rgba(19, 20, 26, 100%);
+		--color-coal-300: rgba(17, 18, 23, 100%);
+		--color-coal-400: rgba(15, 16, 20, 100%);
+		--color-coal-500: rgba(13, 14, 18, 100%);
+		--color-coal-600: rgba(11, 12, 16, 100%);
+
+		--color-black: rgba(0, 0, 0, 100%);
+	}
+}
